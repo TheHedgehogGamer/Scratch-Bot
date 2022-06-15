@@ -6,6 +6,12 @@
 > The Bot is coded in python and uses the [scratchattach](https://github.com/TimMcCool/scratchattach)
 > libery (made by [TimMcCool](https://scratch.mit.edu/users/TimMcCool)) to connect to [Scratch](https://scratch.mit.edu/)
 
+# Discord Bot
+
+> In the scratch bot is also a Discord Bot. The Discord Bot is also coded with python and uses the **discord** libery
+
+> The use of the Discord Bot is to connect to a channel, send text and get text
+
 ## Functions
 
  - **Ping** *to check if you can connect to the Bot*
