@@ -20,9 +20,15 @@
  
  - **setCoin** *to set the amount of coins for a registered user*
 
-- **News** *to get messanges from discord channel* **in progress**
+- **News** *to send text to discord and get text from discord*
 
 
 # Code
 
 > If you use this code read the **README** from [scratchattach](https://github.com/TimMcCool/scratchattach)
+
+
+# Credits
+
+> thanks to TimMcCool for **scratchattach**
+> thanks to the developers who developed the **discord** libery
