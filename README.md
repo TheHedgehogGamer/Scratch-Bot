@@ -4,11 +4,12 @@
 > send them to [Scratch](https://scratch.mit.edu/) projects.
 
 > The Bot is coded in python and uses the [scratchattach](https://github.com/TimMcCool/scratchattach)
-> libery (made by [TimMcCool](https://scratch.mit.edu/users/TimMcCool)) to connect to [Scratch](https://scratch.mit.edu/)
+> library (made by [TimMcCool](https://scratch.mit.edu/users/TimMcCool)) to connect to [Scratch](https://scratch.mit.edu/)
 
 # Discord Bot
 
-> In the scratch bot is also a Discord Bot. The Discord Bot is also coded with python and uses the **discord** libery
+> In the scratch bot is also a Discord Bot. The Discord Bot is also coded with python and uses the **discord.py**
+> library
 
 > The use of the Discord Bot is to connect to a channel, send text and get text
 
@@ -38,4 +39,4 @@
 
 > thanks to TimMcCool for **scratchattach**
 
-> thanks to the developers who developed the **discord** libery
+> thanks to the developers who developed the **discord.py** library
