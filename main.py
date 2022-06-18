@@ -1,3 +1,3 @@
 import subprocess
 
-subprocess.call("python Scratch.py & python Discord.py", shell=True)
+subprocess.call("python Scratch.py", shell=True)
