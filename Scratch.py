@@ -2,7 +2,6 @@ import os
 import scratchattach as scratch3
 import json
 from urllib import request
-import Discord
 
 
 USERNAME_login = "" #Your scratch username
@@ -214,13 +213,6 @@ def IsRegistered(argument1):
     if argument1.lower() in index:
         result = True
     return result
-
-
-
-@client.event
-def News(argument1, argument2):
-    Discord.send(argument1, argument2)
-    return "true"
 
 
 
