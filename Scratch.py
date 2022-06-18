@@ -96,7 +96,13 @@ def Userinfo(argument1):
 @client.request
 def Register(argument1):
     print(f"Data requested for user {argument1.lower()}")
-
+    
+    #with open("OnlineList.json", "r") as file:
+        #online = json.load(file)
+    #online.append(argument1)
+    #with open("OnlineList.json", "w") as file:
+        #json.dump(online)
+    
     filename = 'coins.json'
 
     with open(filename, "r") as file:
@@ -104,8 +110,7 @@ def Register(argument1):
 
     with open("Index.json", "r") as file:
         data2 = json.load(file)
-
-    print(data)
+  
     registered = False
     if argument1.lower() not in data2:
         registered = True
@@ -144,14 +149,15 @@ def addCoin(argument1, argument2):
         data7 = data.index(argument1.lower())
         data2.insert(data7, {argument1.lower(): {'Coins': data6}})
         data9 = data.index(argument1.lower())
-        print(data9)
+        
         data10 = data9 + 1
-        print(data2)
+        
         data2.remove(data2[data10])
         with open("coins.json", "w") as file:
             json.dump(data2, file)
         with open("backup-coins.json", "w") as file:
             json.dump(data2, file)
+        print(argument1.lower() + ':' + str(data6))
         return argument1.lower() + ':' + str(data6)
 
 
@@ -172,14 +178,15 @@ def removeCoin(argument1, argument2):
         data7 = data.index(argument1.lower())
         data2.insert(data7, {argument1.lower(): {'Coins': data6}})
         data9 = data.index(argument1.lower())
-        print(data9)
+        
         data10 = data9 + 1
-        print(data2)
+        
         data2.remove(data2[data10])
         with open("coins.json", "w") as file:
             json.dump(data2, file)
         with open("backup-coins.json", "w") as file:
             json.dump(data2, file)
+        print(argument1.lower() + ':' + str(data6))
         return argument1.lower() + ':' + str(data6)
 
 
@@ -196,12 +203,13 @@ def setCoin(argument1, argument2):
         data2.insert(data7, {argument1.lower(): {'Coins': data6}})
         index_data = data.index(argument1.lower())
         result = index_data + 1
-        print(data2)
+        
         data2.remove(data2[result])
         with open("coins.json", "w") as file:
             json.dump(data2, file)
         with open("backup-coins.json", "w") as file:
             json.dump(data2, file)
+        print(argument1.lower() + ':' + str(data6))
         return argument1.lower() + ':' + str(data6)
 
 
@@ -216,9 +224,18 @@ def IsRegistered(argument1):
 
 
 
-@client.event
-def returnS():
-  return
+@client.request
+def registeredList():
+    with open("Index.json", "r") as file:
+        data = json.load(file)
+    return data
+
+
+
+@client.request
+def News(argument1, argument2):
+    #send(argument1, argument2)
+    return "true"
 
 
 
